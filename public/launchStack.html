@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>CloudIT-LaunchStack</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/Asset%204.png">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="/assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/fonts/line-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/Team-Boxed.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <style>
+        input:focus, textarea:focus, select:focus{
+        outline: none;
+    }
+    </style>
+</head>
+
+<body style="font-family: Roboto, sans-serif;">
+    <!-- Start: Navigation Clean -->
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean" style="background: rgb(5,12,66);height: 110px;">
+        <div class="container"><a class="navbar-brand" href="#" style="color: rgb(255,255,255);"><img src="/assets/img/Asset%201.png" style="width: 30px;">
+                <div>
+                    <p style="margin-top: -7px;font-size: 14px;">CloudIT</p>
+                </div>
+            </a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1" style="border-style: none;"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" style="background: #5fcba3;"><a class="nav-link" href="/dashboard" style="padding-top: 3px;padding-bottom: 3px;">
+                            <p style="margin-bottom: 0px;color: rgb(5,12,66);font-size: 14px;letter-spacing: 1px;font-style: normal;">Stack</p>
+                        </a></li>
+                    <li class="nav-item" style="background: rgba(95,203,163,0);"><a class="nav-link " href="" style="padding-top: 3px;padding-bottom: 3px;">
+                            <p style="margin-bottom: 0px;color: rgb(255,255,255);font-size: 14px;letter-spacing: 1px;">View</p>
+                        </a></li>
+                    <li class="nav-item" style="background: rgba(95,203,163,0);"><a class="nav-link " href="/register" style="padding-top: 3px;padding-bottom: 3px;">
+                            <p style="margin-bottom: 0px;color: rgb(255,255,255);font-size: 14px;letter-spacing: 1px;">Register</p>
+                        </a></li>
+                    <li class="nav-item" style="background: rgba(95,203,163,0);"><a class="nav-link " href="/" style="padding-top: 3px;padding-bottom: 3px;">
+                            <p style="margin-bottom: 0px;color: rgb(255,255,255);font-size: 14px;letter-spacing: 1px;">Login</p>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav><!-- End: Navigation Clean -->
+    <div class="container" style="margin-top: 40px; ">
+        <div>
+            <h3 style="font-weight: bold;letter-spacing: 2px;color: rgb(29,30,61);">Launch Stack</h3>
+            <p style="font-size: 12px;color: rgb(178,180,183);">launch your stack on aws</p>
+        </div>
+    </div>
+    <div class="d-flex d-xl-flex justify-content-center align-items-center justify-content-xl-center align-items-xl-center" style="display: block;" id="loadingImage">
+            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_r8Nbz2.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay id="loadingGif">
+    </div>
+    <div class="container" style="margin-top: 40px; display: none;" id="content">
+        <div class="row">
+            <div class="col-md-12 col-lg-5 col-xl-4" style="background: rgba(5,12,66,0);padding: 15px;">
+                <div class="shadow-lg" style="padding: 30px;background: #050c42;border-radius: 10px;">
+                    <h6 style="font-weight: bold;color: rgb(255,255,255);letter-spacing: 2px;">Name</h6>
+                    <div class="d-flex d-xl-flex justify-content-start align-items-xl-start"><input class="flex-fill" type="text" style="background: rgba(255,255,255,0);color: rgb(255,255,255);border-width: 1px;border-style: none;border-bottom-style: solid;border-bottom-color: rgb(255,255,255);font-size: 14px;" id="stackName"></div>
+                    <div class="d-flex d-xl-flex justify-content-start justify-content-xl-start align-items-xl-center" style="margin-top: 25px;" >
+                        <div class="form-check flex-fill" style="margin-right: 10px;" ><input class="form-check-input" type="radio" id="defaultLaunchType" name="launchType" checked><label class="form-check-label" for="formCheck-1" style="color: rgb(255,255,255);font-size: 14px;">Default</label></div>
+                        <div class="form-check flex-fill" id="launchOption"><input class="form-check-input" type="radio" id="customizeLaunchType" name="launchType"><label class="form-check-label" for="formCheck-2" style="color: rgb(255,255,255);font-size: 14px;">Cutomize</label></div><button class="btn btn-success" type="button" style="padding-top: 3px;padding-bottom: 3px;border-style: none;background: rgb(95,203,163);" id="launchStack">Launch</button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col" style="padding-top: 15px;padding-bottom: 15px;">
+                <div></div>
+                <div class="shadow-lg" style="padding: 30px;background: rgb(113, 117, 216);border-radius: 10px;" id="githubContiner">
+                    <div class="d-xl-flex justify-content-xl-start align-items-xl-center"><i class="la la-github" style="color: rgb(255,255,255);font-size: 30px;"></i>
+                        <p style="font-size: 14px;color: rgb(255,255,255);margin-bottom: 0px;">Git Url</p>
+                    </div>
+                    <div class="d-flex d-xl-flex justify-content-start align-items-xl-start"><input type="url" class="flex-fill" style="background: rgba(255,255,255,0);color: rgb(255,255,255);border-width: 1px;border-style: none;border-bottom-style: solid;border-bottom-color: rgb(255,255,255);font-size: 14px;" id="githubUrl" /></div>
+                </div>
+                <div class="shadow-lg" style="padding: 30px;background: #ffffff;border-radius: 10px; display: none;" id="customizeSection">
+                    <div>
+                        <h5 style="font-weight: bold;color: rgb(29,30,61);letter-spacing: 2px;">Customize</h5>
+                    </div>
+                    <div style="margin-top: 10px;margin-bottom: 6px;" id="customizeInpSection">
+                        <p style="font-size: 14px;color: rgb(29,30,61);margin-bottom: 0px;">Key Name</p>
+                        <div class="d-flex d-xl-flex flex-fill justify-content-start justify-content-xl-start"><input class="flex-fill" type="text" style="color: rgb(29,30,61);font-size: 14px;border-radius: 0px;border-width: 1px;border-style: none;border-bottom-style: solid;border-bottom-color: rgb(29,30,61);"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- Start: Team Boxed -->
+    <div class="team-boxed" style="background: rgb(255,255,255);"></div><!-- End: Team Boxed -->
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/js/stack.js"></script>
+
+</body>
+
+</html>

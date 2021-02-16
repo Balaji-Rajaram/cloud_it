@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>CloudIT-View</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/Asset%204.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/Team-Boxed.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <style>
+        input:focus, textarea:focus, select:focus{
+        outline: none;
+    }
+    </style>
+</head>
+
+<body style="font-family: Roboto, sans-serif;">
+    <!-- Start: Navigation Clean -->
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean" style="background: rgb(5,12,66);height: 110px;">
+        <div class="container"><a class="navbar-brand" href="#" style="color: rgb(255,255,255);"><img src="assets/img/Asset%201.png" style="width: 30px;">
+                <div>
+                    <p style="margin-top: -7px;font-size: 14px;">CloudIT</p>
+                </div>
+            </a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1" style="border-style: none;"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                   <li class="nav-item" style="background: rgba(95,203,163,0);"><a class="nav-link" href="/dashboard" style="padding-top: 3px;padding-bottom: 3px;">
+                            <p style="margin-bottom: 0px;color:  rgb(255,255,255);font-size: 14px;letter-spacing: 1px;font-style: normal;">Stack</p>
+                        </a></li>
+                    <li class="nav-item" style="background: #5fcba3;"><a class="nav-link active" href="" style="padding-top: 3px;padding-bottom: 3px;">
+                            <p style="margin-bottom: 0px;color:rgb(5,12,66);font-size: 14px;letter-spacing: 1px;">View</p>
+                        </a></li>
+                    <li class="nav-item" style="background: rgba(95,203,163,0);"><a class="nav-link " href="/register" style="padding-top: 3px;padding-bottom: 3px;">
+                            <p style="margin-bottom: 0px;color: rgb(255,255,255);font-size: 14px;letter-spacing: 1px;">Register</p>
+                        </a></li>
+                    <li class="nav-item" style="background: rgba(95,203,163,0);"><a class="nav-link " href="/" style="padding-top: 3px;padding-bottom: 3px;">
+                            <p style="margin-bottom: 0px;color: rgb(255,255,255);font-size: 14px;letter-spacing: 1px;">Login</p>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav><!-- End: Navigation Clean -->
+    <div class="container" style="margin-top: 40px;">
+        <div>
+            <h3 style="font-weight: bold;letter-spacing: 2px;color: rgb(29,30,61);">View Stack</h3>
+            <p style="font-size: 12px;color: rgb(178,180,183);">View your stack</p>
+        </div>
+    </div>
+    <div class="d-flex d-xl-flex justify-content-center align-items-center justify-content-xl-center align-items-xl-center" style="display: block;" id="loadingImage">
+            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_r8Nbz2.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay id="loadingGif">
+    </div>
+    <div class="container" style="margin-top: 40px; display: none;" id="content">
+        <div class="row">
+            <div class="col-md-8 col-xl-8 col-xl-8" style="background: rgba(5,12,66,0);padding: 15px;padding-top: 0px;padding-bottom: 0px;">
+                <div class="shadow-lg" style="padding: 30px;background: #ffffff;border-radius: 10px;">
+                    <h5 style="margin-bottom: 0px;color: rgb(29,30,61);font-weight: bold;" id="baseTemplate"></h5>
+                    <div class="d-flex d-xl-flex justify-content-start align-items-center justify-content-xl-start align-items-xl-center">
+                        <p style="font-size: 14px;margin-bottom: 3px;margin-top: 10px;padding: 3px;background: #5fcba3;color: rgb(255,255,255);border-radius: 5px;padding-right: 10px;padding-left: 10px;" id="status"></p>
+                        <p style="font-size: 12px;margin-bottom: 0px;margin-left: 5px;color: var(--gray);margin-top: 5px;" id="createdAt"></p>
+                    </div>
+                    <p class="text-left" style="font-size: 12px;margin-top: 10px;margin-bottom: 5px;color: rgb(143,145,146);" id="discription"></p>
+                    <div style="background: #050c42;padding: 15px;border-radius: 5px;margin-top: 10px;">
+                        <h6 style="margin-bottom: 0px;color: rgb(255,255,255);font-weight: bold;letter-spacing: 1px;">Output</h6>
+                        <div class="d-flex d-xl-flex justify-content-start justify-content-xl-start align-items-xl-center" style="margin-top: 10px;" id="outputContainer">
+                            
+                        </div>
+                    </div>
+                    <div style="margin-top: 15px;"><a href="#" style="color: rgb(95,203,163);" id="deleteStack">Delete</a></div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4 col-xl-4" style="padding-top: 15px;padding-bottom: 15px;" id="allStacks">
+                
+            </div>
+        </div>
+    </div><!-- Start: Team Boxed -->
+    <div class="team-boxed" style="background: rgb(255,255,255);"></div><!-- End: Team Boxed -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/viewStack.js"></script>
+
+</body>
+
+</html>
