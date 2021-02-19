@@ -1,4 +1,4 @@
-<div style="text-align:center"><img src="./public/assets/img/Asset3.png" > </div>
+<div style="text-align:center"><img src="./public/assets/img/banner.png" > </div>
 
 <br/>
 <br/>
